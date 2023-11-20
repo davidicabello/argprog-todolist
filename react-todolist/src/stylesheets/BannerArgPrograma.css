@@ -1,0 +1,12 @@
+.bannerargprograma-logo-contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.bannerargprograma-logo {
+    width: 400px;
+    height: auto;
+}
