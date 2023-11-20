@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <LogoArgentinaPrograma />
       <div className="tasks-main">
-        <h1>Tareas</h1>
+        <h1>Lista de Tareas</h1>
         <Task text="ArgPrograma React" />
       </div>
     </div>
