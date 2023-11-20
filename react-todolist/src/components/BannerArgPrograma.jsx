@@ -1,9 +1,9 @@
 import arglogo from "../assets/logo.jpg";
 import "../stylesheets/BannerArgPrograma.css";
 
-export const BannerArgPrograma = () => {
+const BannerArgPrograma = () => {
   return (
-    <div className="bannerargprograma-logo-contenedor">
+    <div className="bannerargprograma-container">
       <img
         src={arglogo}
         alt="Banner Argentina Programa"
@@ -12,3 +12,5 @@ export const BannerArgPrograma = () => {
     </div>
   );
 };
+
+export default BannerArgPrograma;

@@ -1,9 +1,8 @@
-.bannerargprograma-logo-contenedor {
+.bannerargprograma-container {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
 }
 
 .bannerargprograma-logo {
