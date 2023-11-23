@@ -1,10 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import TaskForm from "./TaskForm";
 import Task from "./Task";
 import "../stylesheets/TaskList.css";
 const TaskList = () => {
-  const [tasks, setTasks] = useState([]); //se inicia el estado con un array vacio
+  const [tasks, setTasks] = useState(
+    JSON.parse(localStorage.getItem("tasks")) || []
+  ); //se inicia el estado con un array vacio
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
+  useEffect(() => {
+    const tasks = JSON.parse(localStorage.getItem("tasks"));
+    if (tasks) {
+      setTasks(tasks);
+    }
+  }, []);
   const addTask = (task) => {
     if (task.text.trim()) {
       //verifica cadena vacia
